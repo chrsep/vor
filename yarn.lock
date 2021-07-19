@@ -6072,13 +6072,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/events@npm:*":
-  version: 3.0.0
-  resolution: "@types/events@npm:3.0.0"
-  checksum: 9a424c2da210957d5636e0763e8c9fc3aaeee35bf411284ddec62a56a6abe31de9c7c2e713dabdd8a76ff98b47db2bd52f61310be6609641d6234cc842ecbbe3
-  languageName: node
-  linkType: hard
-
 "@types/faker@npm:5.5.7":
   version: 5.5.7
   resolution: "@types/faker@npm:5.5.7"
@@ -6086,13 +6079,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/formidable@npm:1.0.31":
-  version: 1.0.31
-  resolution: "@types/formidable@npm:1.0.31"
+"@types/formidable@npm:1.2.3":
+  version: 1.2.3
+  resolution: "@types/formidable@npm:1.2.3"
   dependencies:
-    "@types/events": "*"
     "@types/node": "*"
-  checksum: 025f59bf8b917cdfd794379a8acd0012481a63fa6ac307033d3b1f0935e002b0cddee67476a7dd988d27cc288d0ca9fdda4b13700525acfdae44b62a70115736
+  checksum: 926f01c1e6a6f4db46e20bb3f42a1199201137a388d0d5e6aceb0647eb8f6be2ae99c5f4dfff6fc97b117fe42895ff9f16a15ac16594e0550646e156fdaf35de
   languageName: node
   linkType: hard
 
@@ -14381,7 +14373,7 @@ fsevents@^1.2.7:
     "@tailwindcss/typography": 0.4.1
     "@types/body-scroll-lock": 2.6.2
     "@types/dompurify": 2.2.3
-    "@types/formidable": 1.0.31
+    "@types/formidable": 1.2.3
     "@types/hls.js": 1.0.0
     "@types/jest": 26.0.24
     "@types/minio": 7.0.8
