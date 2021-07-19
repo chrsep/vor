@@ -21,7 +21,7 @@
     "@tailwindcss/typography": "0.4.1",
     "@types/body-scroll-lock": "2.6.2",
     "@types/dompurify": "2.2.3",
-    "@types/formidable": "1.0.31",
+    "@types/formidable": "1.2.3",
     "@types/hls.js": "1.0.0",
     "@types/jest": "26.0.24",
     "@types/minio": "7.0.8",
