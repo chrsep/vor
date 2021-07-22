@@ -51,7 +51,7 @@
     "next": "11.0.1",
     "next-compose-plugins": "2.2.1",
     "next-plugin-preact": "3.0.6",
-    "next-pwa": "5.2.23",
+    "next-pwa": "5.2.24",
     "pg": "8.6.0",
     "pino": "6.12.0",
     "pino-pretty": "5.1.1",
