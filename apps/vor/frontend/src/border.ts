@@ -21,3 +21,9 @@ export const borderTop = {
   borderTopWidth: "1px",
   borderTopStyle: "solid",
 }
+
+export const borderLeft = {
+  borderLeftWidth: 1,
+  borderLeftStyle: "solid",
+  borderLeftColor: "border",
+}

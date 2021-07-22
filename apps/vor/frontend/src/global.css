@@ -22,16 +22,11 @@
   font-display: swap;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 a,
 a:hover,
 a:focus,
 a:active {
   text-decoration: none;
-  border: none;
   user-select: none;
 }
 

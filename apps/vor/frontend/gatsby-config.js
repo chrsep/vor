@@ -91,6 +91,7 @@ const plugins = [
 
 // this disables plugins for dev.
 if (process.env.NODE_ENV === "production") {
+  plugins.push(`gatsby-plugin-preact`)
   plugins.push({
     resolve: "@sentry/gatsby",
     options: {
@@ -122,6 +123,11 @@ const developMiddleware = (app) => {
 }
 
 module.exports = {
+  flags: {
+    FAST_DEV: true,
+    DEV_WEBPACK_CACHE: true,
+    PARALLEL_SOURCING: true,
+  },
   siteMetadata: {
     title: `Obserfy for Teachers`,
     description: `Record keeping tool for montessori schools.`,

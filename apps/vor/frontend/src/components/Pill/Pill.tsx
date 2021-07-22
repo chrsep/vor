@@ -1,8 +1,7 @@
-import { FC } from "react"
-import { Box, BoxProps } from "theme-ui"
 import { Trans } from "@lingui/macro"
+import { FC } from "react"
+import { Box, BoxProps, Text } from "theme-ui"
 import { borderFull } from "../../border"
-import Typography from "../Typography/Typography"
 
 interface Props extends Omit<BoxProps, "css"> {
   text?: string
@@ -20,16 +19,16 @@ export const Pill: FC<Props> = ({ sx, color, text, ...props }) => (
     }}
     {...props}
   >
-    <Typography.Body
+    <Text
       color={color}
       sx={{
-        fontSize: [0, 0],
-        lineHeight: "1em",
+        display: "block",
+        fontSize: 0,
         textTransform: "capitalize",
       }}
     >
       <Trans id={text} />
-    </Typography.Body>
+    </Text>
   </Box>
 )
 

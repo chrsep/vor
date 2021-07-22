@@ -10,8 +10,13 @@ import { Typography } from "../Typography/Typography"
 export interface MarkdownEditorProps {
   value?: string
   onChange: (value: string) => void
+  placeholder?: string
 }
-const MarkdownEditor: FC<MarkdownEditorProps> = ({ onChange, value = "" }) => {
+const MarkdownEditor: FC<MarkdownEditorProps> = ({
+  onChange,
+  placeholder = "Write something",
+  value = "",
+}) => {
   const [showPreview, setShowPreview] = useState(false)
 
   return (
@@ -20,7 +25,6 @@ const MarkdownEditor: FC<MarkdownEditorProps> = ({ onChange, value = "" }) => {
         <Box
           p={3}
           sx={{
-            backgroundColor: "darkSurface",
             borderBottomLeftRadius: "default",
             borderBottomRightRadius: "default",
             minHeight: 408,
@@ -32,7 +36,6 @@ const MarkdownEditor: FC<MarkdownEditorProps> = ({ onChange, value = "" }) => {
         <Box
           px={2}
           sx={{
-            backgroundColor: "darkSurface",
             borderBottomLeftRadius: "default",
             borderBottomRightRadius: "default",
           }}
@@ -41,7 +44,7 @@ const MarkdownEditor: FC<MarkdownEditorProps> = ({ onChange, value = "" }) => {
             data-cy="markdown-editor"
             value={value}
             onChange={(e) => onChange(e.target.value)}
-            placeholder="Write something"
+            placeholder={placeholder}
             sx={{
               lineHeight: "1.7142857",
               outline: "none",
@@ -49,22 +52,17 @@ const MarkdownEditor: FC<MarkdownEditorProps> = ({ onChange, value = "" }) => {
               px: 2,
               py: 3,
               border: "none",
-              backgroundColor: "darkSurface",
               minHeight: 400,
+              backgroundColor: "transparent",
             }}
           />
         </Box>
       )}
 
-      <Flex
-        px={2}
-        pb={3}
-        sx={{ alignItems: "center", backgroundColor: "darkSurface" }}
-      >
+      <Flex px={2} pb={3} sx={{ alignItems: "center" }}>
         <Button
           variant="secondary"
           as="button"
-          mt={3}
           ml={2}
           mr={0}
           px={3}
@@ -84,7 +82,6 @@ const MarkdownEditor: FC<MarkdownEditorProps> = ({ onChange, value = "" }) => {
         <Button
           variant="secondary"
           as="button"
-          mt={3}
           ml={2}
           mr={0}
           px={3}
@@ -112,7 +109,7 @@ const MarkdownEditor: FC<MarkdownEditorProps> = ({ onChange, value = "" }) => {
           rel="noreferrer"
           sx={{
             display: "flex",
-            alignItems: "center",
+            alignItems: "end",
             ml: "auto",
             transition: "color ease-in 0.1s",
             color: "textMediumEmphasis",
@@ -124,18 +121,12 @@ const MarkdownEditor: FC<MarkdownEditorProps> = ({ onChange, value = "" }) => {
             },
           }}
         >
-          <Icon
-            as={MarkdownIcon}
-            mr={2}
-            mt={2}
-            mb={2}
-            sx={{ color: "inherit" }}
-          />
+          <Icon as={MarkdownIcon} mr={2} mt={2} sx={{ color: "inherit" }} />
 
           <Typography.Body
             pr={2}
             mt={2}
-            mb={2}
+            mb={1}
             sx={{
               fontSize: 0,
               color: "inherit",

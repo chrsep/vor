@@ -4,7 +4,6 @@ import { QueryClient, QueryClientProvider } from "react-query"
 import { Box, useColorMode } from "theme-ui"
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary"
 import Layout from "../components/Layout/Layout"
-import "../global.css"
 
 const queryClient = new QueryClient()
 

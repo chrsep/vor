@@ -3,6 +3,8 @@ import { track } from "./src/analytics"
 import { i18n } from "@lingui/core"
 import { en, id } from "make-plural/plurals"
 import { Severity } from "@sentry/gatsby"
+import "./src/global.css"
+import "./src/tailwind.css"
 
 export const onServiceWorkerUpdateReady = () => {
   if (window.updateAvailable) {
